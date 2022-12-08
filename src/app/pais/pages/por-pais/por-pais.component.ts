@@ -13,6 +13,7 @@ export class PorPaisComponent {
   termino: string = '';
   hayError: boolean = false;
   paises : Country[] = [];
+  textPais:string = 'Buscar pais...'
 
   constructor( private paisService: PaisService){
 
@@ -33,9 +34,10 @@ export class PorPaisComponent {
         this.paises = [];
       }
       );
+  }
 
-
-
+  sugerencias( termino: string){
+      this.hayError = false;
   }
 
 }

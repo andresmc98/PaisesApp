@@ -28,8 +28,6 @@ export class PorRegionComponent {
   }
 
   buscarRegion (regionActiva:string){
-    this.regionActiva = this.regionActiva;
-    console.log(this.regionActiva);
 
     this.paisService.buscarRegion( regionActiva )
       .subscribe( (paises) => {
